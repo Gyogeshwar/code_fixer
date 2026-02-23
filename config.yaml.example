@@ -1,0 +1,13 @@
+llm:
+  provider: lmstudio         # openai, anthropic, google, local, lmstudio, ollama
+  model: qwen2.5-coder-14b  # Model name from LM Studio
+  temperature: 0.2
+  base_url: http://localhost:1234/v1  # LM Studio default port
+
+rule_engine:
+  enabled: true
+  linters:
+    - ruff
+    - black
+    - mypy
+    - pyflakes
